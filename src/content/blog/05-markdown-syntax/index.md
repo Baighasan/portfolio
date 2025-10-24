@@ -178,10 +178,8 @@ Add a `-` or `+` for items. Don't mix. For sub items, indent.
 Use the `![title](./image.*)` pattern relative to the same folder as the markdown file. Notice the period.
 
 ```md
-![Square Pants](./spongebob.webp)
+![Example Image](./example.webp)
 ```
-
-![Square Pants](./spongebob.webp)
 
 ---
 
