@@ -5,5 +5,10 @@ dateStart: "07/03/2023"
 dateEnd: "09/08/2023"
 ---
 
-✦ Automated a multi-stage manual reporting process using Power Automate, streamlining Excel formatting and cloud migration while saving ~5 hours.<br>
-✦ Built a report configuration and delivery tool in C# (.NET) that eliminated repetitive manual tasks and cut processing time by ~50% per cycle.<br>
+Wrote scripts and leveraged low code solutions to automate manual processes.
+
+What I worked on:
+
+- Developed a C# script that automated a legacy, manual report generation process
+- Used Power Automate to automate a ton of tedius Excel formatting for those reports
+- These two automations saved around 50+ hours per year
