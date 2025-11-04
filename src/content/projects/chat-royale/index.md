@@ -98,6 +98,8 @@ After that, I got a domain from Cloudflare. Cloudflare makes things easy because
 
 Finally, I had to set up HTTPS on my server. I used Caddy to set this up since it makes it incredibly easy. Caddy acts as a reverse proxy for your backend server. When the client makes a request to the backend, Caddy handles certificates and encryption, then forwards the HTTP request to the backend. To set it up, I created a Caddyfile with the domain configured and it handled the rest.
 
+I also set up a simple CI/CD pipeline using GitHub Actions. Currently, it SSHs into the production server, pulls the code, and builds everything directly on the serverm, which is not exactly best practice. The plan is to build Docker images in the CI pipeline, push them to a registry, and have the server pull pre-built images instead. I'll also incorporate Docker secrets for handling environment variables as well.
+
 Here's a diagram of the final production infrastructure!
 
 ![Production-Infra](/production-infra.png)
