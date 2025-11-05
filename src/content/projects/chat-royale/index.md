@@ -90,7 +90,7 @@ The solution is straightforward: define which origins to allow in your backend. 
 
 ### Deployment & DevOps
 
-For deployment, I specifically wanted to take a manual approach rather than use existing solutions, just to learn. The first thing I had to do was create a production Docker Compose file. This would set up things like environment variables, production URLs, and overall optimization for production builds.
+For deployment, I specifically wanted to take a custom approach rather than use existing solutions, just to learn. The first thing I had to do was create a production Docker Compose file. This would set up things like environment variables, production URLs, and overall optimization for production builds.
 
 Next, I decided to use AWS Lightsail for my production server. I chose Lightsail over something like EC2 primarily because it's a lot simpler to set up and use. The pricing is more predictable, the interface is much simpler, and I get to avoid a lot of manual configuration I'd have to do with EC2. All I had to do was SSH into my VPS, pull my production build and run it. 
 
