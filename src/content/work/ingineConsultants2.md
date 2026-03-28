@@ -5,7 +5,7 @@ dateStart: "07/01/2024"
 dateEnd: "09/06/2024"
 ---
 
-During my time back at Ingine Consultants I got exposed to a lot of Platform Engineering and Security concepts. I built the infrastructure for a data pipeline moving PII data, all while ensuring 100% compliance with data regulations.
+During my time back at Ingine Consultants, I was brought on to help build the infrastructure supporting a data pipeline handling sensitive PII data.
 
 Here's some stuff I did:
 

@@ -26,8 +26,13 @@ const work = await Promise.all(
         { 
           work.map(entry => (
             <li class="animate">
-              <div class="font-semibold text-black dark:text-white">
+              <div class="font-semibold text-black dark:text-white flex items-center gap-2">
                 {entry.data.company}
+                {entry.data.dateEnd === "Present" && (
+                  <span class="text-xs font-medium px-2 py-0.5 rounded-full border border-black/15 dark:border-white/20 opacity-75">
+                    Current
+                  </span>
+                )}
               </div>
               <div class="text-sm opacity-75">
                 {entry.data.role}

@@ -34,7 +34,7 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I am a <i>software engineer, devops engineer, product enthusiast, problem solver,</i> and <i>student</i>.
+            I'm a <i>devops/platform/infra engineer, product enthusiast, problem solver,</i> and <i>student</i>.
           </p>
           <p class="animate">
             I'm currently studying Management Engineering at the University of Waterloo. 
@@ -60,8 +60,13 @@ const work = await Promise.all(
         <ul class="flex flex-col space-y-4">
           {work.map(entry => (
             <li>
-              <div class="font-semibold text-black dark:text-white">
+              <div class="font-semibold text-black dark:text-white flex items-center gap-2">
                 {entry.data.company}
+                {entry.data.dateEnd === "Present" && (
+                  <span class="text-xs font-medium px-2 py-0.5 rounded-full border border-black/15 dark:border-white/20 opacity-75">
+                    Current
+                  </span>
+                )}
               </div>
               <div class="text-sm opacity-75">
                 {entry.data.role}
